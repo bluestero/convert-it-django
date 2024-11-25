@@ -1,5 +1,4 @@
 import { showToast, fillProgressCircle} from "./utils.js";
-import { animateCircles } from "./cursor.js";
 
 
 // Required variables.
@@ -292,8 +291,6 @@ function titleClickHandler(element) {
 
 // OnLoad setup.
 document.addEventListener("DOMContentLoaded", function(){
-
-    animateCircles();
 
     // Clearing out elements' values.
     document.querySelectorAll('input').forEach(element => {
