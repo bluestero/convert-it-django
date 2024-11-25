@@ -1,0 +1,59 @@
+<!--DOCUMENT INFO-->
+<!DOCTYPE html>
+<html>
+
+<!-- Load Django static tag -->
+{% load static %}
+
+<!--Header and other imports-->
+<head>
+    <meta charset="UTF-8">  
+    <link rel="shortcut icon" href="#">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="stylesheet" href="{% static 'toast.css' %}">
+    <link rel="stylesheet" href="{% static 'cursor.css' %}">
+    <script src="{% static 'main.js' %}" type="module"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>{% block title %}Default Title{% endblock title %}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href= "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <!--Toast component overlay to display toast notifications-->
+    <div class="toast-overlay" id="toast-overlay"></div>
+
+    <!--Cursor component for cursor trail effect-->
+    <div class="cursor">
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+        <div class="cursor-circle"></div>
+    </div>
+
+    <!--Starting the Block Content-->
+    {% block content %}
+
+
+    <!--Ending the block content-->
+    {% endblock content %}
+
+</body>
+</html>
